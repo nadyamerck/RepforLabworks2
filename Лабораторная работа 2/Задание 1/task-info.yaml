@@ -1,0 +1,41 @@
+type: edu
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 188
+        length: 307
+        placeholder_text: "# TODO: написать класс Book"
+        initial_state:
+          length: 27
+          offset: 188
+        initialized_from_dependency: false
+        encrypted_possible_answer: |
+          class Book:
+              def __init__(self, id_, name, pages):
+                  self.id = id_
+                  self.name = name
+                  self.pages = pages
+          
+              def __str__(self):
+                  return f'Книга "{self.name}"'
+          
+              def __repr__(self):
+                  return f'Book(id_={self.id}, name=\'{self.name}\', pages={self.pages})'
+        selected: true
+        status: Solved
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 15 Mar 2025 18:04:27 UTC"
+record: -1

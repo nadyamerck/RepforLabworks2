@@ -1,0 +1,76 @@
+type: edu
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 188
+        length: 310
+        placeholder_text: "# TODO: написать класс Book"
+        dependency:
+          section: Атрибуты и методы
+          lesson: Лабораторная работа 2
+          task: Задание 1
+          file: task.py
+          placeholder: 1
+        initial_state:
+          length: 27
+          offset: 188
+        initialized_from_dependency: true
+        encrypted_possible_answer: |
+          class Book:
+              def __init__(self, id_, name, pages):
+                  self.id = id_
+                  self.name = name
+                  self.pages = pages
+          
+              def __str__(self):
+                  return f'Книга "{self.name}"'
+          
+              def __repr__(self):
+                  return f'Book(id_={self.id}, name=\'{self.name}\', pages={self.pages})'
+        selected: false
+        status: Solved
+        is_visible: false
+      - offset: 498
+        length: 494
+        placeholder_text: "# TODO: написать класс Library"
+        initial_state:
+          length: 30
+          offset: 216
+        initialized_from_dependency: false
+        encrypted_possible_answer: |2
+        
+          class Library:
+              def __init__(self, books=None):
+                  if books is None:
+                      self.books = []
+                  else:
+                      self.books = books
+        
+              def get_next_book_id(self):
+                  if not self.books:
+                      return 1
+                  return self.books[-1].id + 1
+        
+              def get_index_by_book_id(self, id_):
+                  for i, book in enumerate(self.books):
+                      if book['id'] == id_:
+                          return i
+                  raise ValueError('Книги с запрашиваемым id не существует')
+        selected: true
+        status: Solved
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 15 Mar 2025 18:08:44 UTC"
+record: -1
