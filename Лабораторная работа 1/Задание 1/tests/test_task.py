@@ -32,7 +32,8 @@ class TestClasses(unittest.TestCase):
                 self.assertTrue(inspect.getdoc(method), f'Метод {class_name}.{method_name} не документирован')
                 signature = inspect.signature(method)
                 self.assertNotEqual(signature.return_annotation, inspect._empty,
-                                    f'метод {class_name}.{method_name} не содержит аннотацию типа возвращаемого значения')
+                                    f'метод {class_name}.{method_name} не содержит аннотацию типа возвращаемого'
+                                    f' значения')
                 for parameter in [p for p in signature.parameters if not p == 'self']:
                     self.assertNotEqual(signature.parameters[parameter].annotation, inspect._empty,
                                         f'Параметр "{parameter}" не аннотирован')
