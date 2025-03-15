@@ -1,0 +1,36 @@
+type: theory
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 0
+        length: 1526
+        placeholder_text: "# TODO: описать базовый класс"
+        initial_state:
+          length: 29
+          offset: 0
+        initialized_from_dependency: false
+        encrypted_possible_answer: |
+          class A:
+              ...
+        selected: true
+        status: Solved
+      - offset: 1528
+        length: 1856
+        placeholder_text: "# TODO: описать дочерний класс"
+        initial_state:
+          length: 30
+          offset: 31
+        initialized_from_dependency: false
+        encrypted_possible_answer: |
+          class B(A):
+              ...
+        selected: true
+        status: Solved
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+status: Solved
+record: -1
+post_submission_on_open: true
