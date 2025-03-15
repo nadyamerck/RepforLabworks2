@@ -65,4 +65,3 @@ class TestLibrary(unittest.TestCase):
             'Книги с запрашиваемым id не существует' in cm.exception.args,
             'Сообщение об ошибке не соответствует заданному',
         )
-
