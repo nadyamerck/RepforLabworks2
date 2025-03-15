@@ -8,7 +8,7 @@ BOOKS_DATABASE = [
         "id": 2,
         "name": "test_name_2",
         "pages": 400,
-    }
+    },
 ]
 
 

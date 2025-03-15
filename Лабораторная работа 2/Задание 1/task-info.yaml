@@ -3,7 +3,7 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 188
+      - offset: 189
         length: 307
         placeholder_text: "# TODO: написать класс Book"
         initial_state:
@@ -37,5 +37,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Sat, 15 Mar 2025 18:04:27 UTC"
+  time: "Sat, 15 Mar 2025 19:12:27 UTC"
 record: -1

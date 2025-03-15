@@ -3,7 +3,7 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 188
+      - offset: 189
         length: 310
         placeholder_text: "# TODO: написать класс Book"
         dependency:
@@ -31,7 +31,7 @@ files:
         selected: false
         status: Solved
         is_visible: false
-      - offset: 498
+      - offset: 499
         length: 494
         placeholder_text: "# TODO: написать класс Library"
         initial_state:
