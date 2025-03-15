@@ -1,5 +1,6 @@
 import doctest
 
+
 class Book:
     def __init__(self, title: str, author: str, pages: int):
         """
@@ -43,6 +44,7 @@ class Book:
         True
         """
         return self.pages > threshold
+
 
 class Car:
     def __init__(self, brand: str, model: str, fuel_level: float):
@@ -94,6 +96,7 @@ class Car:
         """
         required_fuel = (distance * fuel_consumption) / 100
         return self.fuel_level >= required_fuel
+
 
 class Bank_Account:
     def __init__(self, owner: str, balance: float = 0.0):
