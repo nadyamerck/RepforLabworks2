@@ -8,9 +8,7 @@ import task
 class TestClasses(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.learner_defined_classes = {
-            name: x for name, x in inspect.getmembers(task) if inspect.isclass(x)
-        }
+        cls.learner_defined_classes = {name: x for name, x in inspect.getmembers(task) if inspect.isclass(x)}
         cls.learner_defined_methods = {}
         if cls.learner_defined_classes:
             for class_name, class_ in cls.learner_defined_classes.items():
@@ -18,8 +16,7 @@ class TestClasses(unittest.TestCase):
                     method_name: method
                     for method_name, method in inspect.getmembers(
                         class_,
-                        predicate=lambda x: inspect.isfunction(x)
-                        and not x.__name__.startswith("__"),
+                        predicate=lambda x: inspect.isfunction(x) and not x.__name__.startswith("__"),
                     )
                 }
 
@@ -40,9 +37,7 @@ class TestClasses(unittest.TestCase):
 
     def test_methods(self):
         for class_name, methods_dict in self.__class__.learner_defined_methods.items():
-            self.assertGreaterEqual(
-                len(methods_dict), 2, f"Класс {class_name} имеет менее 2 методов"
-            )
+            self.assertGreaterEqual(len(methods_dict), 2, f"Класс {class_name} имеет менее 2 методов")
             for method_name, method in methods_dict.items():
                 self.assertTrue(
                     inspect.getdoc(method),
@@ -52,8 +47,7 @@ class TestClasses(unittest.TestCase):
                 self.assertNotEqual(
                     signature.return_annotation,
                     inspect._empty,
-                    f"метод {class_name}.{method_name} не содержит аннотацию типа возвращаемого"
-                    f" значения",
+                    f"метод {class_name}.{method_name} не содержит аннотацию типа возвращаемого" f" значения",
                 )
                 for parameter in [p for p in signature.parameters if not p == "self"]:
                     self.assertNotEqual(
@@ -66,9 +60,7 @@ class TestClasses(unittest.TestCase):
         import doctest
 
         suite = doctest.DocTestSuite(task)
-        self.assertGreater(
-            suite.countTestCases(), 0, "в файле task.py нет ни одного doctest"
-        )
+        self.assertGreater(suite.countTestCases(), 0, "в файле task.py нет ни одного doctest")
         self.assertTrue(
             unittest.TextTestRunner().run(suite).wasSuccessful(),
             "тесты, определённые в doctest, провалились",
