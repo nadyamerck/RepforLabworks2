@@ -1,0 +1,56 @@
+type: edu
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 17
+        length: 4968
+        placeholder_text: "# TODO: описать класс"
+        initial_state:
+          length: 21
+          offset: 51
+        initialized_from_dependency: false
+        encrypted_possible_answer: |
+          class A:
+              ...
+        selected: true
+        status: Solved
+      - offset: 17
+        length: 4968
+        placeholder_text: "# TODO: описать ещё класс"
+        initial_state:
+          length: 25
+          offset: 74
+        initialized_from_dependency: false
+        encrypted_possible_answer: |
+          class B:
+              ...
+        selected: true
+        status: Solved
+      - offset: 17
+        length: 4968
+        placeholder_text: "# TODO: и ещё один"
+        initial_state:
+          length: 18
+          offset: 101
+        initialized_from_dependency: false
+        encrypted_possible_answer: |
+          class C:
+              ...
+        selected: true
+        status: Solved
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 15 Mar 2025 17:54:11 UTC"
+record: -1
