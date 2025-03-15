@@ -9,8 +9,6 @@ if __name__ == "__main__":
     except ValueError as e:
         print(f"Ошибка: неправильные данные")
 
-
-
     # Проверка класса Car
     try:
         # Создаем автомобиль с корректными данными
@@ -19,8 +17,6 @@ if __name__ == "__main__":
         car.refuel(-10)
     except ValueError as e:
         print(f"Ошибка: неправильные данные")
-
-
 
     # Проверка класса BankAccount
     try:
