@@ -1,0 +1,130 @@
+type: output
+files:
+  - name: task_1.py
+    visible: false
+    placeholders:
+      - offset: 0
+        length: 6
+        placeholder_text: "# TODO"
+        dependency:
+          section: Основы ООП
+          lesson: Лабораторная работа 1
+          task: Задание 1
+          file: task.py
+          placeholder: 1
+        initial_state:
+          length: 6
+          offset: 0
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          class A:
+              ...
+        selected: false
+        status: Solved
+        is_visible: false
+      - offset: 9
+        length: 6
+        placeholder_text: "# TODO"
+        dependency:
+          section: Основы ООП
+          lesson: Лабораторная работа 1
+          task: Задание 1
+          file: task.py
+          placeholder: 2
+        initial_state:
+          length: 6
+          offset: 9
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          class B:
+              ...
+        selected: false
+        status: Solved
+        is_visible: false
+      - offset: 18
+        length: 6
+        placeholder_text: "# TODO"
+        dependency:
+          section: Основы ООП
+          lesson: Лабораторная работа 1
+          task: Задание 1
+          file: task.py
+          placeholder: 3
+        initial_state:
+          length: 6
+          offset: 18
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          class C:
+              ...
+        selected: false
+        status: Solved
+        is_visible: false
+    learner_created: false
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 0
+        length: 42
+        placeholder_text: "# TODO: импортируйте классы, созданные в ходе выполнения пр\
+      ошлого задания"
+        initial_state:
+          length: 73
+          offset: 19
+        initialized_from_dependency: false
+        encrypted_possible_answer: "A, B, C"
+        selected: true
+        status: Solved
+      - offset: 72
+        length: 236
+        placeholder_text: "# TODO: инстанцировать все описанные классы, создав три объ\
+      екта."
+        initial_state:
+          length: 64
+          offset: 122
+        initialized_from_dependency: false
+        encrypted_possible_answer: "   a = A()\n    b = B()\n    c = "
+        selected: true
+        status: Solved
+      - offset: 312
+        length: 299
+        placeholder_text: "# TODO: вызвать метод с некорректными аргументами"
+        initial_state:
+          length: 49
+          offset: 205
+        initialized_from_dependency: false
+        encrypted_possible_answer: '   a.add_another_a'
+        selected: true
+        status: Solved
+      - offset: 611
+        length: 0
+        placeholder_text: "# TODO: вызвать метод с некорректными аргументами"
+        initial_state:
+          length: 49
+          offset: 340
+        initialized_from_dependency: false
+        encrypted_possible_answer: '   b.add_another_b'
+        selected: true
+        status: Solved
+      - offset: 615
+        length: 505
+        placeholder_text: "# TODO: вызвать метод с некорректными аргументами"
+        initial_state:
+          length: 49
+          offset: 475
+        initialized_from_dependency: false
+        encrypted_possible_answer: '   c.add_another_c'
+        selected: true
+        status: Solved
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 15 Mar 2025 18:03:27 UTC"
+record: -1
